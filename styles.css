@@ -222,8 +222,8 @@ h3.display { font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
   background-position: top left;
   color: #FFFFFF;
   overflow: hidden; padding: 0.85rem 0;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, rgba(0,0,0,.45) 1%, #000 2%, #000 98%, rgba(0,0,0,.45) 99%, transparent);
+  mask-image: linear-gradient(90deg, transparent, rgba(0,0,0,.45) 1%, #000 2%, #000 98%, rgba(0,0,0,.45) 99%, transparent);
 }
 .marquee__track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
 .marquee:hover .marquee__track { animation-play-state: paused; }
@@ -565,3 +565,4 @@ h3.display { font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
   .deco--sway { animation: deco-sway 5.5s ease-in-out infinite alternate; transform-origin: 50% 0; }
 }
 @media (max-width: 640px) { .deco--hide-s { display: none; } }
+@media (max-width: 1024px) { .deco--hide-m { display: none; } }
